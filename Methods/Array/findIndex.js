@@ -2,6 +2,7 @@ function myFindIndex(callback) {
   for (let i = 0; i < this.length; i++) {
     if (callback(this[i])) return i;
   }
+  return -1;
 }
 Array.prototype.myFindIndex = myFindIndex;
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];
